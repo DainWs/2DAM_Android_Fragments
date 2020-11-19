@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">JADPFragments</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="browser">Browser</string>
+    <string name="calculator">Calculator</string>
+    <string name="camera">Camera</string>
+    <string name="hello_blank_fragment">" "</string>
+    <string name="makePhoto">Make Photo</string>
+</resources>

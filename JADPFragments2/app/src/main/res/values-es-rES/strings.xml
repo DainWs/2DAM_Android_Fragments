@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">JADPFragments</string>
+    <string name="hello_blank_fragment">" "</string>
+    <string name="browser">Buscador</string>
+    <string name="calculator">Calculadora</string>
+    <string name="camera">Camara</string>
+    <string name="makePhoto">Hacer Foto</string>
+</resources>

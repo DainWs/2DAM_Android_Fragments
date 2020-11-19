@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.joseduarte.jadpfragments.CameraFragment"
+        android:label="fragment_camera"
+        tools:layout="@layout/fragment_camera" />
+    <fragment
+        android:id="@+id/browserFragment"
+        android:name="com.joseduarte.jadpfragments.BrowserFragment"
+        android:label="fragment_browser"
+        tools:layout="@layout/fragment_browser" />
+    <fragment
+        android:id="@+id/calculatorFragment"
+        android:name="com.joseduarte.jadpfragments.CalculatorFragment"
+        android:label="fragment_calculator"
+        tools:layout="@layout/fragment_calculator" >
+        <action
+            android:id="@+id/action_calculatorFragment_to_sumaFragment"
+            app:destination="@id/sumaFragment" />
+        <action
+            android:id="@+id/action_calculatorFragment_to_restaFragment"
+            app:destination="@id/restaFragment" />
+        <action
+            android:id="@+id/action_calculatorFragment_to_divisionFragment"
+            app:destination="@id/divisionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.joseduarte.jadpfragments.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_browserFragment"
+            app:destination="@id/browserFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_cameraFragment"
+            app:destination="@id/cameraFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_calculatorFragment"
+            app:destination="@id/calculatorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sumaFragment"
+        android:name="com.joseduarte.jadpfragments.SumaFragment"
+        android:label="fragment_suma2"
+        tools:layout="@layout/fragment_suma2" >
+        <argument
+            android:name="Number1"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="Number2"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/restaFragment"
+        android:name="com.joseduarte.jadpfragments.RestaFragment"
+        android:label="fragment_resta2"
+        tools:layout="@layout/fragment_resta2" >
+        <argument
+            android:name="Number1"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="Number2"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/divisionFragment"
+        android:name="com.joseduarte.jadpfragments.DivisionFragment"
+        android:label="fragment_division2"
+        tools:layout="@layout/fragment_division2" >
+        <argument
+            android:name="Number1"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="Number2"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+</navigation>
